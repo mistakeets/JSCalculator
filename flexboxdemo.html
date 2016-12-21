@@ -1,0 +1,59 @@
+​<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    .flex {
+        /* basic styling */
+        height: 450px;
+        width: 300px;
+        border: 1px solid #555;
+        font: 36px Monospace;
+        text-align: center;
+
+        /* flexbox setup */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex > div {
+        flex: 1 1 auto;
+        /* Transition works better with defined width value.
+           "width:auto" can be buggy in Gecko and Webkit.
+           https://bugzilla.mozilla.org/show_bug.cgi?id=571344 */
+        width: 30px;
+        transition: width 0.7s ease-out;
+    }
+
+    /* colors */
+    .flex > div:nth-child(1){ background: #ffaa00; }
+    .flex > div:nth-child(2){ background: #F1F2F1; }
+    .flex > div:nth-child(3){ background: #ff8c1a; }
+    .flex > div:nth-child(4){ background: #ffaa00; }
+    .flex > div:nth-child(5){ background: #F1F2F1; }
+    .flex > div:nth-child(6){ background: #ff8c1a; }
+    .flex > div:nth-child(7){ background: #ffaa00; }
+    .flex > div:nth-child(8){ background: #F1F2F1; }
+    .flex > div:nth-child(9){ background: #ff8c1a; }
+
+    .flex > div:hover {
+        width: 200px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <p>Flexbox Demo</p>
+    <div class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>0</div>
+    </div>
+  </body>
+</html>

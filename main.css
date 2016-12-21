@@ -1,0 +1,32 @@
+body {
+    margin: 40px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: white;
+    color: white;
+}
+
+.item-display {
+    grid-column-start: 1;
+    grid-column-end: one;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: right;
+    background-color: blue;
+    color: white;
+}
+
+.box {
+    background-color: black;
+    color: orange;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    font-family: monospace;
+    text-align: center;
+}
