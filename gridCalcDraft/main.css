@@ -10,6 +10,7 @@ body {
 .calcshell{
   border-color: black;
   background-color: yellow;
+  display: grid;
 }
 
 .item-display {
@@ -37,7 +38,7 @@ body {
     color: orange;
     border-radius: 5px;
     padding: 20px;
-    font-size: 55%;
+    font-size: 150%;
     font-family: monospace;
     text-align: center;
 }
