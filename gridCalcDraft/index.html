@@ -13,28 +13,26 @@
 </head>
 
 <body>
-  <div class="calcshell">
-  <div class="item-display"><input type="text" value="" id="display"/></div>
   <div class="calculator">
-
-      <div class="box 1"><button value="1" class="box" onclick="inputNum = doMath('1');">1</button></div>
-      <div class="box 2"><button value="2" class="box" onclick="inputNum = doMath('2');">2</button></div>
-      <div class="box 3"><button value="3" class="box" onclick="inputNum = doMath('3');">3</button></div>
-      <div class="box 4"><button value="4" class="box" onclick="inputNum = doMath('4');">4</button></div>
-      <div class="box 5"><button value="5" class="box" onclick="inputNum = doMath('5');">5</button></div>
-      <div class="box 6"><button value="6" class="box" onclick="inputNum = doMath('6');">6</button></div>
-      <div class="box 7"><button value="7" class="box" onclick="inputNum = doMath('7');">7</button></div>
-      <div class="box 8"><button value="8" class="box" onclick="inputNum = doMath('8');">8</button></div>
-      <div class="box 9"><button value="9" class="box" onclick="inputNum = doMath('9');">9</button></div>
-      <div class="box 0"><button value="0" class="box" onclick="inputNum = doMath('0');">0</button></div>
-      <div class="box dot"><button value="." class="box" onclick="inputNum = doMath('.');">.</button></div>
-      <div class="operator"><button value="+" class="box" onclick="inputNum = doMath('+');">+</button></div>
-      <div class="operator"><button value="-" class="box" onclick="inputNum = doMath('-');">-</button></div>
-      <div class="operator"><button value="*" class="box" onclick="inputNum = doMath('*');">*</button></div>
-      <div class="operator"><button value="/" class="box" onclick="inputNum = doMath('/');">/</button></div>
-      <div class="operator"><button value="C" class="box" onclick="inputNum = doMath('C');">C</button></div>
+      <div class="item-display"><input type="text" value="" id="display"/></div>
+      <div class="box 7"><button value="7" class="box" onclick="pushButton(this.value);">7</button></div>
+      <div class="box 8"><button value="8" class="box" onclick="pushButton(this.value);">8</button></div>
+      <div class="box 9"><button value="9" class="box" onclick="pushButton(this.value);">9</button></div>
+      <div class="box +"><button value="+" class="box" onclick="pushButton(this.value);">+</button></div>
+      <div class="box 4"><button value="4" class="box" onclick="pushButton(this.value);">4</button></div>
+      <div class="box 5"><button value="5" class="box" onclick="pushButton(this.value);">5</button></div>
+      <div class="box 6"><button value="6" class="box" onclick="pushButton(this.value);">6</button></div>
+      <div class="box -"><button value="-" class="box" onclick="pushButton(this.value);">-</button></div>
+      <div class="box 1"><button value="1" class="box" onclick="pushButton(this.value);">1</button></div>
+      <div class="box 2"><button value="2" class="box" onclick="pushButton(this.value);">2</button></div>
+      <div class="box 3"><button value="3" class="box" onclick="pushButton(this.value);">3</button></div>
+      <div class="box *"><button value="*" class="box" onclick="pushButton(this.value);">*</button></div>
+      <div class="box 0"><button value="0" class="box" onclick="pushButton(this.value);">0</button></div>
+      <div class="box dot"><button value="." class="box" onclick="pushButton(this.value);">.</button></div>
+      <div class="box eql"><button value="=" class="box" onclick="calculate(document.getElementById('display').value);">=</button></div>
+      <div class="box /"><button value="/" class="box" onclick="pushButton(this.value);">/</button></div>
+      <div class="box clear"><button value="C" class="box" onclick="pushButton(this.value);">C</button></div>
   </div>
-</div>
 
 </body>
 </html>
