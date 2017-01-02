@@ -1,4 +1,3 @@
-```
 function pushButton(btnVal) {
     if (btnVal == "C") {
         document.getElementById("display").value = '';
