@@ -1,0 +1,108 @@
+body {
+    margin: 40px;
+  width:650px;
+  height:650px;
+    background-color: grey;
+
+}
+
+
+item-display {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+    width: 300px;
+    height: 250px;
+    color: black;
+}
+
+#display{
+  height:100px;
+  width: 235px;
+  margin-bottom: 15px;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 50px;
+  background-image: url("gokukingSM.png");
+  background-repeat: no-repeat;
+  background-color: #4d4444;
+  color: white;
+
+}
+
+
+.calc {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+background-color: #e8612a;
+width: 240px;
+height: 340px;
+}
+
+.calculator {
+    background-color: grey;
+    color: white;
+}
+
+.buttons {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.zeroButton {
+  width: 115px;
+}
+
+.equalsButton {
+  width: 125px;
+}
+.calRow1 {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.calRow2 {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.calRow3 {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.box {
+    background-color: #3c42b4;
+    color: orange;
+    border-radius: 5px;
+    font-size: 38px;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+
+}
+
+.operator{
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+
+  font-size: 23px;
+  font-family: monospace;
+  text-align: center;
+}
+
+button{
+ border: none;
+}
