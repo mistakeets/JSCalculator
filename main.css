@@ -3,9 +3,7 @@ body {
   width:650px;
   height:650px;
     background-color: grey;
-
 }
-
 
 item-display {
   display: -webkit-flex;
@@ -16,19 +14,18 @@ item-display {
     color: black;
 }
 
-#display{
+#display {
   height:100px;
   width: 235px;
   margin-bottom: 15px;
   font-family: 'Press Start 2P',monospace;
   font-size: 50px;
+  text-align: right;
   background-image: url("gokukingSM.png");
   background-repeat: no-repeat;
   background-color: #4d4444;
   color: white;
-
 }
-
 
 .calc {
   display: -webkit-flex;
@@ -41,41 +38,17 @@ height: 340px;
 }
 
 .calculator {
-    background-color: grey;
-    color: white;
+  background-color: grey;
+  color: white;
 }
 
 .buttons {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-
 }
 
-.zeroButton {
-  width: 115px;
-}
-
-.equalsButton {
-  width: 125px;
-}
-.calRow1 {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 15px;
-}
-
-.calRow2 {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 15px;
-}
-
-.calRow3 {
+.calRow {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -84,25 +57,38 @@ height: 340px;
 }
 
 .box {
-    background-color: #3c42b4;
-    color: orange;
-    border-radius: 5px;
-    font-size: 38px;
-    font-family: 'Press Start 2P', monospace;
-    text-align: center;
-
-}
-
-.operator{
-  background-color: orange;
-  color: white;
+  background-color: #3c42b4;
+  color: orange;
   border-radius: 5px;
-
-  font-size: 23px;
-  font-family: monospace;
+  font-size: 38px;
+  font-family: 'Press Start 2P', monospace;
   text-align: center;
 }
 
-button{
- border: none;
+.operator {
+  background-color: orange;
+  color: #3c42b4;
+  border-radius: 5px;
+  font-size: 38px;
+  font-family: 'Press Start 2P', monospace;
+  text-align: center;
+}
+
+.box:hover {background-color: #291A7A}
+
+.box:active {background-color: #3C57B4}
+
+.operator:hover {background-color: #E8872A}
+
+.operator:active {background-color: #E8C22A}
+
+button {border: none}
+
+button:active {
+outline: none;
+border: none;
+}
+
+button:focus {
+    outline: none;
 }
