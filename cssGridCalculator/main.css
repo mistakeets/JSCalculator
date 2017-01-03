@@ -12,11 +12,11 @@
 }
 
 #display {
-
     height: 100px;
     width: 435px;
     text-align: right;
-    font-size: 300%;
+    font-size: 500%;
+    font-family: monospace;
     background-color: #8CAAC3;
     color: white;
 }
@@ -35,23 +35,23 @@
 .box:hover {background-color: #B8C1AD}
 
 .box:active {
-  background-color: #AAB3AB ;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #AAB3AB ;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
-button {border: none;}
+button {border: none}
 
 button:active {
-outline: none;
-border: none;
+    outline: none;
+    border: none;
 }
 
 button:focus {
     outline: none;
 }
 
- .operator{
+ .operator {
     background-color: red;
     color: orange;
     border-radius: 5px;
